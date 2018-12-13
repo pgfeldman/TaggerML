@@ -1,0 +1,20 @@
+{
+  "name": "tagger-ml",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+     "clean": "rm -rf node_modules yarn.lock"
+  },
+  "dependencies": {
+    "next": "^7.0.2",
+    "react": "^16.7.0-alpha.2",
+    "react-dom": "^16.7.0-alpha.2"
+  },
+  "devDependencies": {
+    "@types/next": "^7.0.5",
+    "@types/node": "^10.12.14",
+    "@types/react": "^16.7.17",
+    "@types/react-dom": "^16.0.11",
+    "typescript": "^3.2.2"
+  }
+}
