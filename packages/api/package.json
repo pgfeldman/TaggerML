@@ -1,0 +1,51 @@
+{
+  "name": "@taggerml/api",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": {
+    "email": "zach.curtis@asrcfederal.com",
+    "name": "Zach Curtis"
+  },
+  "contributors": [
+    {
+      "email": "Philip.Feldman@asrcfederal.com",
+      "name": "Phil Feldman",
+      "url": "http://philfeldman.com/"
+    },
+    {
+      "email": "zach.curtis@asrcfederal.com",
+      "name": "Zach Curtis"
+    }
+  ],
+  "keywords": [
+    "machine learning",
+    "textual tagging"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:pgfeldman/TaggerML.git"
+  },
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "clean": "rm -rf node_modules",
+    "dev": "concurrently 'yarn local-start' 'yarn playground'",
+    "debug": "dotenv -- nodemon -e ts,graphql -x ts-node --inspect src/index.ts",
+    "local-start": "dotenv -e .env.local -- nodemon -e ts,graphql -x ts-node src/index.ts",
+    "now-start": "dotenv -- nodemon -e ts,graphql -x NODE_ENV=production node dist/index.js",
+    "playground": "graphql playground --dotenv .env.local --port 8000"
+  },
+  "dependencies": {
+    "graphql": "^14.0.2",
+    "graphql-tools": "^4.0.3",
+    "mysql": "^2.16.0",
+    "typeorm": "^0.2.9"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "dotenv": "^6.2.0",
+    "dotenv-cli": "^1.4.0",
+    "graphql-cli": "^2.17.0",
+    "nodemon": "^1.18.8",
+    "ts-node": "^7.0.1"
+  }
+}

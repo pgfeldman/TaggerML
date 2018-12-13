@@ -1,0 +1,38 @@
+{
+  "name": "taggerml-monorepo",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "author": {
+    "email": "zach.curtis@asrcfederal.com",
+    "name": "Zach Curtis"
+  },
+  "contributors": [
+    {
+      "email": "Philip.Feldman@asrcfederal.com",
+      "name": "Phil Feldman",
+      "url": "http://philfeldman.com/"
+    },
+    {
+      "email": "zach.curtis@asrcfederal.com",
+      "name": "Zach Curtis"
+    }
+  ],
+  "keywords": ["machine learning", "textual tagging"],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:pgfeldman/TaggerML.git"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "yarn workspaces run build",
+    "clean": "rm -rf node_modules yarn.lock; yarn workspaces run clean",
+    "dev": "yarn workspaces run dev"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.14",
+    "typescript": "^3.2.2"
+  }
+}

@@ -1,0 +1,14 @@
+version: '3'
+services:
+  mysql:
+    image: mysql/mysql-server:5.7
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    volumes:
+      - ./data:/docker-entrypoint-initdb.d
+    environment:
+      MYSQL_DATABASE: taggerml
+      MYSQL_ROOT_PASSWORD: get@pHd!
+      MYSQL_ROOT_HOST: "%"
+    ports: 
+      - "3306:3306"

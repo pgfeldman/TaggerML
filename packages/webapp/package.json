@@ -1,0 +1,44 @@
+{
+  "name": "@taggerml/webapp",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": {
+    "email": "zach.curtis@asrcfederal.com",
+    "name": "Zach Curtis"
+  },
+  "contributors": [
+    {
+      "email": "Philip.Feldman@asrcfederal.com",
+      "name": "Phil Feldman",
+      "url": "http://philfeldman.com/"
+    },
+    {
+      "email": "zach.curtis@asrcfederal.com",
+      "name": "Zach Curtis"
+    }
+  ],
+  "keywords": ["machine learning", "textual tagging"],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:pgfeldman/TaggerML.git"
+  },
+  "scripts": {
+    "build": "next build",
+    "clean": "rm -rf node_modules yarn.lock .next",
+    "dev": "next",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^7.0.2",
+    "react": "^16.7.0-alpha.2",
+    "react-dom": "^16.7.0-alpha.2"
+  },
+  "devDependencies": {
+    "@types/next": "^7.0.5",
+    "@types/node": "^10.12.14",
+    "@types/react": "^16.7.17",
+    "@types/react-dom": "^16.0.11",
+    "@zeit/next-typescript": "^1.1.1",
+    "typescript": "^3.2.2"
+  }
+}
