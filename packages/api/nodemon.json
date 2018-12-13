@@ -1,4 +1,5 @@
 {
   "verbose": false,
+  "exec": "node -r ts-node/register ./src/index.ts",
   "ignore": ["*.test.ts", "scripts/**/*.*"]
 }

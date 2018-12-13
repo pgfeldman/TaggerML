@@ -29,7 +29,7 @@
   "scripts": {
     "build": "yarn workspaces run build",
     "clean": "rm -rf node_modules yarn.lock; yarn workspaces run clean",
-    "dev": "yarn workspaces run dev"
+    "dev": "yarn workspace @taggerml/api dev & yarn workspace @taggerml/webapp dev"
   },
   "devDependencies": {
     "@types/node": "^10.12.14",
